@@ -53,6 +53,7 @@
 		7D076A302508A54B00E8B5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DACE91E250B10A000AAF316 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		7DACE920250B11D300AAF316 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		7DACE922250B13E900AAF316 /* SwiftUIWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		7D076A0B2508A54900E8B5A6 /* SwiftUIWidget */ = {
 			isa = PBXGroup;
 			children = (
+				7DACE922250B13E900AAF316 /* SwiftUIWidget.entitlements */,
 				7D076A0C2508A54900E8B5A6 /* AppDelegate.swift */,
 				7D076A0E2508A54900E8B5A6 /* SceneDelegate.swift */,
 				7D076A102508A54900E8B5A6 /* ContentView.swift */,
@@ -442,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIWidget/SwiftUIWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = JH6HFBQXT6;
@@ -462,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIWidget/SwiftUIWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = JH6HFBQXT6;
