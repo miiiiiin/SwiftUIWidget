@@ -15,6 +15,8 @@
 		7D076A192508A54B00E8B5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D076A172508A54B00E8B5A6 /* LaunchScreen.storyboard */; };
 		7D076A242508A54B00E8B5A6 /* SwiftUIWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D076A232508A54B00E8B5A6 /* SwiftUIWidgetTests.swift */; };
 		7D076A2F2508A54B00E8B5A6 /* SwiftUIWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D076A2E2508A54B00E8B5A6 /* SwiftUIWidgetUITests.swift */; };
+		7DACE91F250B10A000AAF316 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE91E250B10A000AAF316 /* Emoji.swift */; };
+		7DACE921250B11D300AAF316 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE920250B11D300AAF316 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7D076A2A2508A54B00E8B5A6 /* SwiftUIWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D076A2E2508A54B00E8B5A6 /* SwiftUIWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWidgetUITests.swift; sourceTree = "<group>"; };
 		7D076A302508A54B00E8B5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DACE91E250B10A000AAF316 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		7DACE920250B11D300AAF316 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				7D076A172508A54B00E8B5A6 /* LaunchScreen.storyboard */,
 				7D076A1A2508A54B00E8B5A6 /* Info.plist */,
 				7D076A142508A54B00E8B5A6 /* Preview Content */,
+				7DACE91E250B10A000AAF316 /* Emoji.swift */,
+				7DACE920250B11D300AAF316 /* EmojiView.swift */,
 			);
 			path = SwiftUIWidget;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 			files = (
 				7D076A0D2508A54900E8B5A6 /* AppDelegate.swift in Sources */,
 				7D076A0F2508A54900E8B5A6 /* SceneDelegate.swift in Sources */,
+				7DACE91F250B10A000AAF316 /* Emoji.swift in Sources */,
 				7D076A112508A54900E8B5A6 /* ContentView.swift in Sources */,
+				7DACE921250B11D300AAF316 /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

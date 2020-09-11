@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let emojis = [
+        Emoji(icon: "😊", name: "Happy", description: "happy"),
+        Emoji(icon: "👿", name: "Angry", description: "Angry"),
+        Emoji(icon: "🥴", name: "Boring", description: "Boring")
+    ]
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing: 30) {
+            ForEach(emojis) { emoji in
+                EmojiView(emoji: emoji)
+            }
+        }
     }
 }
 
