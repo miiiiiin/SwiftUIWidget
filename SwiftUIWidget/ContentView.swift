@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 struct ContentView: View {
     
     @AppStorage("emoji", store: UserDefaults(suiteName: "group.kr.miiiiiin.SwiftUIWidget"))
