@@ -52,8 +52,37 @@ struct PlaceholderView: View {
 struct WidgetEntryView: View {
     let entry: Provider.Entry
     
+    @Environment(\.widgetFamily) var family
+    
+    @ViewBuilder //it will allow to use if or switch statements inside of our view
     var body: some View {
-        EmojiView(emoji: entry.emoji)
+        
+        switch family {
+        case .systemSmall:
+            EmojiView(emoji: entry.emoji)
+            
+        case .systemMedium:
+            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 30, content: {
+                EmojiView(emoji: entry.emoji)
+                
+                Text(entry.emoji.name)
+                    .font(.largeTitle)
+                
+            })
+        default:
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 30, content: {
+                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 30, content: {
+                    EmojiView(emoji: entry.emoji)
+                    
+                    Text(entry.emoji.name)
+                        .font(.largeTitle)
+                    
+                })
+                Text(entry.emoji.description)
+                    .font(.title)
+                    .padding()
+            })
+        }
     }
 }
 
@@ -65,5 +94,6 @@ struct MyWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             WidgetEntryView(entry: entry)
         }
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
