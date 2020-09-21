@@ -24,6 +24,8 @@
 		7D320AB62512F68A00B47CE9 /* My-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D320AA52512F68900B47CE9 /* My-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DACE91F250B10A000AAF316 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE91E250B10A000AAF316 /* Emoji.swift */; };
 		7DACE921250B11D300AAF316 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE920250B11D300AAF316 /* EmojiView.swift */; };
+		7DC7F731251847D1004F5849 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE91E250B10A000AAF316 /* Emoji.swift */; };
+		7DC7F73B25184AE5004F5849 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACE920250B11D300AAF316 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,7 @@
 		7DACE91E250B10A000AAF316 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		7DACE920250B11D300AAF316 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		7DACE922250B13E900AAF316 /* SwiftUIWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIWidget.entitlements; sourceTree = "<group>"; };
+		7DC7F73625184886004F5849 /* My-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My-WidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		7D076A002508A54900E8B5A6 = {
 			isa = PBXGroup;
 			children = (
+				7DC7F73625184886004F5849 /* My-WidgetExtension.entitlements */,
 				7D076A0B2508A54900E8B5A6 /* SwiftUIWidget */,
 				7D076A222508A54B00E8B5A6 /* SwiftUIWidgetTests */,
 				7D076A2D2508A54B00E8B5A6 /* SwiftUIWidgetUITests */,
@@ -402,6 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC7F731251847D1004F5849 /* Emoji.swift in Sources */,
+				7DC7F73B25184AE5004F5849 /* EmojiView.swift in Sources */,
 				7D320AB22512F68A00B47CE9 /* My_Widget.intentdefinition in Sources */,
 				7D320AAD2512F68900B47CE9 /* My_Widget.swift in Sources */,
 			);
@@ -489,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -543,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -687,6 +693,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "My-WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH6HFBQXT6;
 				INFOPLIST_FILE = "My-Widget/Info.plist";
@@ -710,6 +717,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "My-WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH6HFBQXT6;
 				INFOPLIST_FILE = "My-Widget/Info.plist";
